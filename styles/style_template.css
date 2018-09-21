@@ -1,0 +1,320 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 oct. 2016, 20:34:46
+    Author     : Nadir
+*/
+body{
+    margin: 0 !important;
+    background: url("../images/library.jpg") no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.header_template{
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+}
+.liste_header_template{
+    margin: 0;
+    display: block;
+    padding: 0;
+    width: 5%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%;
+    z-index: 10000;
+}
+#space_home_header{
+    display: inline-block;
+}
+.liste_header_template li{
+    display: block;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+}
+.liste_header_template li img{
+    width: 100%;
+}
+.header_img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.user_header p{
+    display: inline-block;
+}
+.img_pp_template{
+    width: 30px;
+    position: relative;
+    display: inline-block;
+}
+.img_pp_template img{
+    width: 100%;
+    height: 30px;
+    transform: translateY(-65%);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.conteneur_conteneur{
+    position: relative;
+    height: 400px;
+    background-color: rgba(0,0,0,0.7);
+}
+.conteneur_img_profile{
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    /*    background-position-x: 100% !important;
+        background-position-y: 50% !important;*/
+    left: 0;
+    top: 0;
+    position: relative;
+}
+.range_bg{
+    -webkit-appearance: slider-vertical;
+}
+.cadre_img_profile{
+    width: 7%;
+    height: 100px;
+    position: absolute;
+    border: solid;
+    border-width: 2px;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+    cursor:pointer;
+}
+.change_baneer_valid{
+    cursor: pointer;
+}
+.nom_profile{
+    color: black;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.5);
+    width: 100%;
+    text-align: center;
+}
+.cadre_img_profile .header_img{
+    height: 100px;
+    position: absolute;
+}
+.modifier_img_profile{
+    display: none;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.7);
+}
+.modifier_img_profile p{
+    margin: 0;
+}
+.commentaire_notification{
+    font-style: italic;
+}
+.notification_user{
+    text-decoration: underline;
+}
+h1,h2{
+    font-family: "Times New Roman", serif;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+    /*display: inline-block;*/
+}
+.liste_header_template a{
+    /*font-family: 'Yatra One';*/
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.header_text{
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    top: 50%;
+    color: white;
+}
+.renseigner_header_sentence, .connexion_header, .inscription_header, .deconnexion_header, .user_header, .notification, .notification_close{
+    color: white;
+    text-align: right;
+    position: relative;
+    padding: 0 5px 0px 5px;
+    cursor: pointer;
+    transition: 2s;
+    display: inline-block;
+}
+.notification_close{
+    position: absolute;
+    display: none;
+    left: 0;
+}
+.header_buttons{
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.header_buttons p{
+    margin: 0;
+    padding: 9.5px;
+}
+.renseigner_header_sentence:hover, .inscription_header:hover, .connexion_header:hover, .deconnexion_header:hover, .user_header:hover{
+    background-color: white;
+    transition: 2s;
+    color: rgba(0,0,0,0.7);
+    border: white;
+}
+.renseigner_header_sentence_panel, .connexion_header_panel, .inscription_header_panel{
+    display: block;
+    position: absolute;
+    right: 0px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 20px 10px 20px;
+    height: 0;
+    display: none;
+    z-index: 10000;
+}
+.renseigner_header_sentence_panel .renseigner_header_sentence_text, .connexion_header_panel input, .inscription_header_panel input,
+.deconnexion_oui, .deconnexion_non, .ajouter_livres_form input, .ajouter_livres_form select, .ajouter_livres_form textarea{
+    display: block;
+    padding: 30px;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+.renseigner_header_sentence_panel .renseigner_header_sentence_panel_text_title, .connexion_header_panel .connexion_header_panel_text_title,
+.inscription_header_panel .inscription_header_panel_text_title{
+    text-align: center;
+    color: white;
+    display: inline-block;
+}
+.renseigner_header_sentence_panel .renseigner_header_sentence_submit, .renseigner_header_sentence_panel .renseigner_header_sentence_cancel,
+.connexion_header_panel button,.inscription_header_panel button
+{
+    display: inline-block;
+    padding: 10px;
+    width: 49%;
+    margin-top: 15px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.array_errors_text{
+    text-align: center;
+    color: red;
+}
+.errors_inscription{
+    display: none;
+}
+.img_error{
+    /*    display: inline-block;*/
+    position: absolute;
+    margin-left: 10px;
+}
+.error_and_name{
+    text-align: center;
+}
+.nom_error{
+    display: none;
+}
+.validation_inscription, .confirmation_deconnexion, .validation_connexion{
+    position: absolute;
+    display: none;
+    height: 0;
+    color: black;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 5px;
+    z-index: 10000;
+}
+.validation_inscription p, .confirmation_deconnexion p, .validation_connexion p{
+    font-family: 'Kaushan Script', cursive;
+    padding: 0 15px;
+}
+.bouton_fermer{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+.error_email_exist{
+    position: absolute; 
+    top: -15px;
+    left: 0; 
+    color: rgba(218,50,50,1); 
+    background: rgba(0,0,0,0.3);
+}
+.buttons_confirmation_deconnexion{
+    text-align: center;
+}
+.deconnexion_oui, .deconnexion_non{
+    display: inline-block;
+    background: transparent;
+    color: black;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.email_inexistant_message {
+    display: none;
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    background-color: rgba(0,0,0,0.7);
+    padding: 10px 20px 10px 20px;
+    right: 30px;
+    width: 229px;
+    height: 0;
+}
+.cacher_email_inexistant_message {
+    display: inline-block;
+    padding: 5px;
+    width: 35%;
+    background-color: white;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+.mdp_incorrect{
+    display: none;
+    position: absolute;
+    margin: 0;
+    color: red;
+}
+.all{
+    height: auto;
+    /*background: rgba(0,0,0,0.3);*/
+}
+.les_notifications{
+    position: absolute;
+    color: white;
+    right: 0;
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.9);
+    padding: 20px;
+    z-index: 10000;
+    display: none;
+}
+.une_notif{
+    padding: 5px;
+    cursor: pointer;
+}
+.date_notification{
+    text-align: right;
+}

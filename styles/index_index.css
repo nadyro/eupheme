@@ -1,0 +1,98 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10 oct. 2016, 01:23:52
+    Author     : Nadir
+*/
+.all{
+    display: block;
+    color: white;
+}
+.all_first_half,.all_second_half{
+    width: 45%;
+    display: inline-block;
+}
+.all_second_half{
+    position: absolute;
+}
+.all_little_half{
+    width: 5%;
+    display: inline-block;
+}
+.big_all .all_first_half{
+    width: 30%;
+    display: inline-block;
+    position: absolute;
+    margin-left: 5%;
+}
+.big_all .all_second_half{
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+    padding-bottom: 40px;
+}
+h2{
+    text-align: center;
+}
+.all_page_index{
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    /*background-color: rgba(0,0,0,0.5);*/
+}
+.container_posts, .container_livres{
+    width: 48%;
+    /*left: 5%;*/
+    position: relative;
+    /*float: right;*/
+}
+.un_post, .un_livre{
+    width: 100%;
+    position: relative;
+    background-color: rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+    display: none;
+}
+.img_post{
+    width: 30%;
+}
+.image_nom_post img{
+    width: 10%;
+    display: inline-block;
+}
+.image_nom_post p{
+    display: inline-block;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+}
+.content_post{
+    text-align: center;
+}
+.top_lane{
+    display: block;
+    width: 90%;
+    /*margin: 0 auto;*/
+}
+.top_lane .whatsuponeupheme, .top_lane .added_books, .top_lane .marketplace{
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border: solid;
+    border-top: none;
+    border-width: 1px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.top_lane div:hover{
+    color: black;
+    background-color: rgba(255,255,255,0.7);
+}
+.img_profile_post{
+    cursor: pointer;
+}
